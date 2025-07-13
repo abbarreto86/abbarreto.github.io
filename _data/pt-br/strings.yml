@@ -85,8 +85,7 @@ footer:
 footer_text: > # the ">" symbol means to ignore newlines until "titles:"
   Desenvolvido em <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> com o tema <a href="https://github.com/george-gca/multi-language-al-folio">multi-language-al-folio</a>.
   Hospedado por <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Fotos do <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-latest_posts: últimas postagens
+latest_posts: Posts recentes
 months:
   long:
     january: Janeiro
@@ -114,7 +113,7 @@ months:
     october: Out
     november: Nov
     december: Dez
-news: novidades
+news: Notícias
 newsletter:
   back: Voltar
   error: "Oops! Algo deu errado, por favor tente novamente."
@@ -160,5 +159,6 @@ search:
     description: Muda o tema do site para o padrão do sistema
     title: Usa o tema padrão do sistema
   theme: Tema
-selected_publications: publicações selecionadas
+selected_publications: Publicações recentes
 site_description: Um tema simples para acadêmicos. Baseado no design do [*folio](https://github.com/bogoli/-folio).
+see_more: Clique aqui para ver mais.

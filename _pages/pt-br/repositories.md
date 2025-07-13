@@ -2,10 +2,10 @@
 page_id: repositories
 layout: page
 permalink: /repositories/
-title: repositórios
+title: Repositórios
 description: Edite o `_data/repositories.yml` e mude as listas `github_users` e `github_repos` para incluir seu próprio perfil do GitHub e repositórios.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 {% if site.data.repositories.github_users %}

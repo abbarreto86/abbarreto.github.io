@@ -39,13 +39,7 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.news }}</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
+    <hr>
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
@@ -53,7 +47,19 @@ layout: default
         <a href="{{ '/blog/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.latest_posts }}</a>
       </h2>
       {% include latest_posts.liquid %}
+      <a href="{{ '/blog/' | relative_url }}">{{ site.data[site.active_lang].strings.see_more }}</a>
     {% endif %}
+    <hr>
+
+    <!-- News -->
+    {% if page.announcements and page.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.news }}</a>
+      </h2>
+      {% include news.liquid limit=true %}
+      <a href="{{ '/news/' | relative_url }}">{{ site.data[site.active_lang].strings.see_more }}</a>
+    {% endif %}
+    <hr>
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
@@ -61,6 +67,7 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">{{ site.data[site.active_lang].strings.selected_publications }}</a>
       </h2>
       {% include selected_papers.liquid %}
+      <a href="{{ '/publications/' | relative_url }}">{{ site.data[site.active_lang].strings.see_more }}</a>
     {% endif %}
 
     <!-- Social -->
